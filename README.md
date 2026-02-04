@@ -80,5 +80,37 @@ No model retraining occurs at runtime.
 
 ---
 
-## 📁 Repository Structure
+## 🔮 Future Improvements
+
+While the current system trains reinforcement learning policies offline and
+uses them for inference-only deployment, several extensions are planned:
+
+- **Online Reinforcement Learning in Streamlit**
+  - Incorporate user feedback (e.g., thumbs up/down or follow-up behavior)
+    to update rewards in real time.
+  - Allow the chatbot to adapt its confidence thresholds and response strategy
+    dynamically during live interactions.
+
+- **Human-in-the-Loop Feedback**
+  - Use explicit user feedback to refine the reward function instead of relying
+    solely on simulated rewards.
+  - Improve robustness for ambiguous or multi-intent economic questions.
+
+- **Expanded State Space**
+  - Extend the RL state beyond confidence scores to include:
+    - Question length
+    - Historical user interactions
+    - Topic recurrence
+
+- **Hybrid RL + Generative Models**
+  - Combine reinforcement learning for decision-making with large language
+    models for richer natural-language responses, while preserving factual accuracy.
+
+- **Additional Economic Indicators**
+  - Integrate wage growth, labor force participation, and CPI subcomponents
+    for deeper macroeconomic analysis.
+
+These improvements would move the system closer to a production-grade
+adaptive conversational agent.
+
 
